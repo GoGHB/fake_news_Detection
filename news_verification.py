@@ -5,8 +5,8 @@ No web scraping is used.
 
 from typing import Dict, List
 from urllib.parse import quote_plus
-import xml.etree.ElementTree as ET
 
+from defusedxml import ElementTree as ET
 import requests
 
 TRUSTED_SOURCES = {
